@@ -1738,10 +1738,6 @@ strong {
   z-index: 130;
 }
 
-.cookie-banner + .support {
-  bottom: 120px;
-}
-
 .support-button {
   display: flex;
   gap: 9px;
@@ -2637,11 +2633,6 @@ strong {
     right: 14px;
     bottom: 14px;
   }
-
-  .cookie-banner + .support {
-    bottom: 160px;
-  }
-
   .support-button span {
     display: none;
   }
