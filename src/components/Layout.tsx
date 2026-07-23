@@ -1,23 +1,23 @@
-import { useEffect, useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
-import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
-import { ArrowUpRight, Cookie, Menu, MessageCircle, Send, X } from 'lucide-react'
-import Footer from './Footer'
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
+import { ArrowUpRight, Cookie, Menu, MessageCircle, Send, X } from "lucide-react";
+import Footer from "./Footer";
 
 const supportAnswers: Record<string, string> = {
-  'Где мой продукт?': 'Мы тоже пытаемся это выяснить.',
-  'Почему MRR не настоящий?': 'Зато график настоящий.',
-  'Как отменить отсутствие подписки?': 'Отсутствие подписки уже отменено.',
-  'Позвать человека': 'Единственный человек сейчас оплачивает API.',
-}
+  "Где мой продукт?": "Мы тоже пытаемся это выяснить.",
+  "Почему MRR не настоящий?": "Зато график настоящий.",
+  "Как отменить отсутствие подписки?": "Отсутствие подписки уже отменено.",
+  "Позвать человека": "Единственный человек сейчас оплачивает API.",
+};
 
 function Header() {
-  const [open, setOpen] = useState(false)
-  const { pathname } = useLocation()
+  const [open, setOpen] = useState(false);
+  const { pathname } = useLocation();
 
-  useEffect(() => setOpen(false), [pathname])
+  useEffect(() => setOpen(false), [pathname]);
 
-  const homeLink = (hash: string) => (pathname === '/' ? hash : `/${hash}`)
+  const homeLink = (hash: string) => (pathname === "/" ? hash : `/${hash}`);
 
   return (
     <header className="site-header">
@@ -26,13 +26,13 @@ function Header() {
           НИХУ<span>-AI</span>
         </Link>
         <nav className="desktop-nav" aria-label="Основная навигация">
-          <a href={homeLink('#features')}>Возможности</a>
-          <a href={homeLink('#how')}>Как это работает</a>
-          <a href={homeLink('#pricing')}>Тарифы</a>
+          <a href={homeLink("#features")}>Возможности</a>
+          <a href={homeLink("#how")}>Как это работает</a>
+          <a href={homeLink("#pricing")}>Тарифы</a>
           <NavLink to="/about">О нас</NavLink>
           <NavLink to="/donate">Донаты</NavLink>
         </nav>
-        <a className="button button-small header-cta" href={homeLink('#generator')}>
+        <a className="button button-small header-cta" href={homeLink("#generator")}>
           Запустить НИХУ-AI
           <ArrowUpRight size={16} aria-hidden="true" />
         </a>
@@ -41,7 +41,7 @@ function Header() {
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
           aria-controls="mobile-menu"
-          aria-label={open ? 'Закрыть меню' : 'Открыть меню'}
+          aria-label={open ? "Закрыть меню" : "Открыть меню"}
         >
           {open ? <X /> : <Menu />}
         </button>
@@ -56,30 +56,28 @@ function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
           >
-            <a href={homeLink('#features')}>Возможности</a>
-            <a href={homeLink('#how')}>Как это работает</a>
-            <a href={homeLink('#pricing')}>Тарифы</a>
+            <a href={homeLink("#features")}>Возможности</a>
+            <a href={homeLink("#how")}>Как это работает</a>
+            <a href={homeLink("#pricing")}>Тарифы</a>
             <Link to="/about">О нас</Link>
             <Link to="/donate">Донаты</Link>
-            <a className="button" href={homeLink('#generator')}>
+            <a className="button" href={homeLink("#generator")}>
               Запустить НИХУ-AI
             </a>
           </motion.nav>
         )}
       </AnimatePresence>
     </header>
-  )
+  );
 }
 
 function CookieBanner() {
-  const [visible, setVisible] = useState(
-    () => localStorage.getItem('nihu-cookie-choice') === null,
-  )
+  const [visible, setVisible] = useState(() => localStorage.getItem("nihu-cookie-choice") === null);
 
   const choose = (choice: string) => {
-    localStorage.setItem('nihu-cookie-choice', choice)
-    setVisible(false)
-  }
+    localStorage.setItem("nihu-cookie-choice", choice);
+    setVisible(false);
+  };
 
   return (
     <AnimatePresence>
@@ -97,22 +95,22 @@ function CookieBanner() {
             <p>Мы используем cookies, чтобы увеличить количество активных пользователей.</p>
           </div>
           <div className="cookie-actions">
-            <button className="button button-small" onClick={() => choose('yes')}>
+            <button className="button button-small" onClick={() => choose("yes")}>
               Монетизировать меня
             </button>
-            <button className="text-button" onClick={() => choose('no')}>
+            <button className="text-button" onClick={() => choose("no")}>
               Отклонить реальность
             </button>
           </div>
         </motion.aside>
       )}
     </AnimatePresence>
-  )
+  );
 }
 
 function SupportChat() {
-  const [open, setOpen] = useState(false)
-  const [answer, setAnswer] = useState('')
+  const [open, setOpen] = useState(false);
+  const [answer, setAnswer] = useState("");
 
   return (
     <div className="support">
@@ -129,11 +127,7 @@ function SupportChat() {
                 <span className="status-dot" />
                 <strong>Поддержка НИХУ-AI</strong>
               </div>
-              <button
-                className="icon-button"
-                aria-label="Закрыть чат"
-                onClick={() => setOpen(false)}
-              >
+              <button className="icon-button" aria-label="Закрыть чат" onClick={() => setOpen(false)}>
                 <X size={18} />
               </button>
             </div>
@@ -162,15 +156,15 @@ function SupportChat() {
       </AnimatePresence>
       <button
         className="support-button"
-        aria-label={open ? 'Закрыть поддержку' : 'Открыть поддержку'}
+        aria-label={open ? "Закрыть поддержку" : "Открыть поддержку"}
         aria-expanded={open}
         onClick={() => setOpen((value) => !value)}
       >
         {open ? <X /> : <MessageCircle />}
-        {!open && <span>Нам не помогут</span>}
+        {!open && <span>Вам не помогут</span>}
       </button>
     </div>
-  )
+  );
 }
 
 export default function Layout() {
@@ -190,5 +184,5 @@ export default function Layout() {
       <div className="ambient ambient-two" />
       <Send className="sr-only" aria-hidden="true" />
     </>
-  )
+  );
 }

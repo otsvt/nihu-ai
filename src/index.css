@@ -2,11 +2,12 @@
 
 :root {
   color-scheme: dark;
-  font-family: "Segoe UI Variable", "Segoe UI", Arial, sans-serif;
+  font-family: "Manrope Variable", "Segoe UI", Arial, sans-serif;
   color: #f5f3ff;
   background: #08080a;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  letter-spacing: 0.015em;
   --ink: #f7f5ff;
   --muted: #9d9aa9;
   --subtle: #6e6a79;
@@ -83,13 +84,16 @@ h1,
 h2,
 h3 {
   margin: 0;
-  letter-spacing: -0.045em;
-  line-height: 1.02;
+  letter-spacing: 0.01em;
+  line-height: 1.08;
+  text-wrap: balance;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 h1,
 h2 {
-  font-family: "Arial Narrow", "Segoe UI Variable Display", "Segoe UI", sans-serif;
+  font-family: "Manrope Variable", "Segoe UI", sans-serif;
 }
 
 strong {
@@ -178,10 +182,10 @@ strong {
 .brand {
   display: inline-flex;
   align-items: baseline;
-  font-family: "Arial Narrow", "Segoe UI", sans-serif;
+  font-family: "Manrope Variable", "Segoe UI", sans-serif;
   font-size: 22px;
   font-weight: 850;
-  letter-spacing: -0.06em;
+  letter-spacing: 0.01em;
 }
 
 .brand span {
@@ -197,7 +201,7 @@ strong {
 .desktop-nav a {
   position: relative;
   color: #aaa6b3;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 540;
   transition: color 180ms ease;
 }
@@ -251,7 +255,7 @@ strong {
   color: #0b0b0d;
   background: var(--lime);
   box-shadow: 0 0 0 0 rgba(184, 243, 75, 0.25);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
@@ -273,7 +277,7 @@ strong {
   min-height: 39px;
   padding: 0 15px;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .button-ghost {
@@ -297,7 +301,7 @@ strong {
   border: 0;
   color: #b7b3c0;
   background: transparent;
-  font-size: 12px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -311,7 +315,7 @@ strong {
   gap: 8px;
   color: #b8f34b;
   font-family: Consolas, "Segoe UI", monospace;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -327,19 +331,19 @@ strong {
 .section {
   position: relative;
   width: var(--page);
-  padding: 126px 0;
+  padding: 96px 0;
   margin: 0 auto;
 }
 
 .section-head {
   max-width: 760px;
-  margin-bottom: 52px;
+  margin-bottom: 40px;
 }
 
 .section-head h2 {
   max-width: 820px;
   margin-top: 18px;
-  font-size: clamp(38px, 5.6vw, 72px);
+  font-size: clamp(34px, 4.6vw, 58px);
   font-weight: 630;
 }
 
@@ -354,15 +358,15 @@ strong {
   margin-top: 25px;
   color: var(--subtle);
   font-family: Consolas, monospace;
-  font-size: 11px;
+  font-size: 16px;
   text-align: right;
   text-transform: uppercase;
 }
 
 .hero {
   position: relative;
-  min-height: 810px;
-  padding: 145px 0 80px;
+  min-height: 720px;
+  padding: 120px 0 64px;
   overflow: hidden;
 }
 
@@ -404,7 +408,7 @@ strong {
   color: #cfccd8;
   background: rgba(255, 255, 255, 0.035);
   font-family: Consolas, monospace;
-  font-size: 10px;
+  font-size: 16px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
@@ -423,9 +427,9 @@ strong {
 
 .hero h1 {
   margin-top: 26px;
-  font-size: clamp(54px, 6.6vw, 94px);
+  font-size: clamp(46px, 5.4vw, 76px);
   font-weight: 680;
-  letter-spacing: -0.07em;
+  letter-spacing: 0.01em;
 }
 
 .hero h1 em,
@@ -456,7 +460,7 @@ strong {
   gap: 15px;
   margin-top: 31px;
   color: #8d8996;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .hero-proof strong {
@@ -477,7 +481,7 @@ strong {
   place-items: center;
   color: #dad4e8;
   background: linear-gradient(135deg, #282331, #15131a);
-  font-size: 8px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -529,7 +533,7 @@ strong {
   margin-bottom: 4px;
   color: #716d79;
   font-family: Consolas, monospace;
-  font-size: 9px;
+  font-size: 16px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -544,7 +548,7 @@ strong {
   gap: 7px;
   color: #b8f34b;
   font-family: Consolas, monospace;
-  font-size: 9px;
+  font-size: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -582,7 +586,7 @@ strong {
 .dashboard-metrics span {
   display: block;
   color: #77727f;
-  font-size: 9px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -590,7 +594,7 @@ strong {
   display: block;
   margin-top: 11px;
   font-size: 21px;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.01em;
 }
 
 .dashboard-metrics small {
@@ -598,7 +602,7 @@ strong {
   margin-top: 7px;
   color: var(--lime);
   font-family: Consolas, monospace;
-  font-size: 8px;
+  font-size: 16px;
 }
 
 .chart-card {
@@ -613,7 +617,7 @@ strong {
   display: flex;
   justify-content: space-between;
   color: #a9a4b0;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .chart-labels span:last-child {
@@ -649,7 +653,7 @@ strong {
   margin-top: 10px;
   color: #5e5a67;
   font-family: Consolas, monospace;
-  font-size: 8px;
+  font-size: 16px;
 }
 
 .event-row {
@@ -663,7 +667,7 @@ strong {
   border-radius: 12px;
   color: #aaa6b2;
   background: rgba(255, 255, 255, 0.02);
-  font-size: 9px;
+  font-size: 16px;
 }
 
 .event-row svg {
@@ -687,7 +691,7 @@ strong {
   color: var(--lime);
   background: #101015;
   font-family: Consolas, monospace;
-  font-size: 8px;
+  font-size: 16px;
   text-transform: uppercase;
   transform: rotate(-1deg);
 }
@@ -734,29 +738,41 @@ strong {
 
 .trust-strip > p {
   color: #77737e;
-  font-size: 11px;
+  font-size: 16px;
   letter-spacing: 0.11em;
   text-transform: uppercase;
 }
 
 .marquee {
+  width: 100%;
   margin: 27px 0 20px;
   overflow: hidden;
-  mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+  contain: paint;
+  mask-image: linear-gradient(90deg, transparent, black 6%, black 94%, transparent);
 }
 
-.marquee div {
+.marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee 28s linear infinite;
+  transform: translate3d(0, 0, 0);
+  animation: marquee 34s linear infinite;
+  will-change: transform;
+}
+
+.marquee-group {
+  display: flex;
+  flex: 0 0 auto;
+  min-width: max-content;
 }
 
 .marquee span {
+  flex: 0 0 auto;
+  white-space: nowrap;
   color: #dad6df;
-  font-family: "Arial Narrow", "Segoe UI", sans-serif;
+  font-family: "Manrope Variable", "Segoe UI", sans-serif;
   font-size: 26px;
   font-weight: 760;
-  letter-spacing: -0.04em;
+  letter-spacing: 0.01em;
 }
 
 .marquee i {
@@ -766,7 +782,7 @@ strong {
 }
 
 @keyframes marquee {
-  to { transform: translateX(-50%); }
+  to { transform: translate3d(-50%, 0, 0); }
 }
 
 .trust-strip small {
@@ -799,13 +815,13 @@ strong {
 .feature-number {
   color: #55515c;
   font-family: Consolas, monospace;
-  font-size: 9px;
+  font-size: 16px;
 }
 
 .metric-card p {
   margin-top: 69px;
   color: #86818e;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .metric-card strong {
@@ -815,7 +831,7 @@ strong {
   background: linear-gradient(110deg, #fff, #8b75d6 72%, var(--lime));
   background-clip: text;
   font-size: clamp(23px, 2.6vw, 34px);
-  letter-spacing: -0.06em;
+  letter-spacing: 0.01em;
 }
 
 .feature-grid {
@@ -827,7 +843,7 @@ strong {
 .feature-card {
   position: relative;
   min-height: 280px;
-  padding: 27px;
+  padding: 24px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 18px;
@@ -877,7 +893,7 @@ strong {
 .feature-card p {
   margin-top: 13px;
   color: #8e8997;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .feature-state {
@@ -889,7 +905,7 @@ strong {
   align-items: center;
   color: #56525d;
   font-family: Consolas, monospace;
-  font-size: 8px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -923,7 +939,7 @@ strong {
 .step-index {
   color: var(--lime);
   font-family: Consolas, monospace;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .steps h3 {
@@ -933,7 +949,7 @@ strong {
 .steps p {
   margin-top: 8px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .steps > article > svg {
@@ -971,13 +987,13 @@ strong {
 }
 
 .generator-copy {
-  padding: 52px;
+  padding: 40px;
   border-right: 1px solid var(--line);
 }
 
 .generator-copy h2 {
   margin-top: 18px;
-  font-size: clamp(40px, 5vw, 64px);
+  font-size: clamp(34px, 4.2vw, 54px);
 }
 
 .generator-copy > p {
@@ -990,7 +1006,7 @@ strong {
   margin-top: 39px;
   margin-bottom: 10px;
   color: #b5b0bd;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 650;
 }
 
@@ -1010,7 +1026,7 @@ strong {
   outline: none;
   color: #fff;
   background: rgba(255, 255, 255, 0.035);
-  font-size: 13px;
+  font-size: 16px;
   transition: border-color 180ms ease, box-shadow 180ms ease;
 }
 
@@ -1029,14 +1045,14 @@ strong {
   margin-top: 11px;
   color: #55515d;
   font-family: Consolas, monospace;
-  font-size: 8px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
 .generator-output {
   display: grid;
   min-height: 590px;
-  padding: 34px;
+  padding: 28px;
   place-items: center;
   background:
     linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
@@ -1080,7 +1096,7 @@ strong {
 .empty-output p {
   margin-top: 10px;
   color: #6e6a75;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .stage-panel {
@@ -1106,7 +1122,7 @@ strong {
   color: #5f5b67;
   background: rgba(255, 255, 255, 0.02);
   font-family: Consolas, monospace;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .stage-list > div.done {
@@ -1137,7 +1153,7 @@ strong {
 .result-head {
   color: var(--lime);
   font-family: Consolas, monospace;
-  font-size: 9px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -1175,7 +1191,7 @@ strong {
   margin-top: 4px;
   color: #68636f;
   font-family: Consolas, monospace;
-  font-size: 8px;
+  font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -1186,7 +1202,7 @@ strong {
   border-left: 2px solid var(--violet);
   color: #a8a3af;
   background: rgba(255, 255, 255, 0.02);
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .result-facts {
@@ -1201,7 +1217,7 @@ strong {
   border: 1px solid var(--line);
   border-radius: 7px;
   color: #77727e;
-  font-size: 8px;
+  font-size: 16px;
 }
 
 .result-actions {
@@ -1215,7 +1231,7 @@ strong {
   display: block;
   margin-top: 15px;
   color: #514d57;
-  font-size: 8px;
+  font-size: 16px;
 }
 
 .spin {
@@ -1240,7 +1256,7 @@ strong {
   border-bottom: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.025);
   color: #96919e;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .activity-panel-head > span {
@@ -1280,20 +1296,20 @@ strong {
 
 .activity-item strong {
   display: block;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .activity-item small {
   display: block;
   margin-top: 5px;
   color: #5c5862;
-  font-size: 8px;
+  font-size: 16px;
 }
 
 .activity-item time {
   color: #5a5660;
   font-family: Consolas, monospace;
-  font-size: 8px;
+  font-size: 16px;
 }
 
 .testimonial-grid {
@@ -1305,7 +1321,7 @@ strong {
 .quote-card {
   position: relative;
   min-height: 330px;
-  padding: 30px;
+  padding: 26px;
   margin: 0;
   border: 1px solid var(--line);
   border-radius: 18px;
@@ -1342,7 +1358,7 @@ strong {
   color: #d4cced;
   background: linear-gradient(145deg, #302746, #15131a);
   place-items: center;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .quote-card figcaption strong,
@@ -1351,13 +1367,13 @@ strong {
 }
 
 .quote-card figcaption strong {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .quote-card figcaption small {
   margin-top: 4px;
   color: #696571;
-  font-size: 9px;
+  font-size: 16px;
 }
 
 .billing-switch {
@@ -1378,7 +1394,7 @@ strong {
   border-radius: 7px;
   color: #797582;
   background: transparent;
-  font-size: 10px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -1390,7 +1406,7 @@ strong {
 .billing-switch > span {
   padding: 0 9px;
   color: var(--lime);
-  font-size: 9px;
+  font-size: 16px;
 }
 
 .pricing-grid {
@@ -1405,7 +1421,7 @@ strong {
   display: flex;
   flex-direction: column;
   min-height: 565px;
-  padding: 30px;
+  padding: 26px;
   border: 1px solid var(--line);
   border-radius: 20px;
   background: #0e0d11;
@@ -1427,7 +1443,7 @@ strong {
   border-radius: 6px;
   color: #0b0a0d;
   background: var(--lime);
-  font-size: 8px;
+  font-size: 16px;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -1441,20 +1457,20 @@ strong {
   min-height: 60px;
   margin-top: 12px;
   color: #77727e;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .price {
   display: inline-block;
   margin-top: 23px;
   font-size: 35px;
-  letter-spacing: -0.06em;
+  letter-spacing: 0.01em;
 }
 
 .price-card > small {
   margin-left: 4px;
   color: #706b77;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .price-card ul {
@@ -1471,7 +1487,7 @@ strong {
   gap: 9px;
   align-items: center;
   color: #a9a4af;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .price-card li svg {
@@ -1487,7 +1503,7 @@ strong {
 .faq-section {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
-  gap: 100px;
+  gap: 64px;
 }
 
 .faq-list {
@@ -1509,7 +1525,7 @@ strong {
   border: 0;
   color: #d5d1da;
   background: transparent;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   cursor: pointer;
 }
@@ -1517,7 +1533,7 @@ strong {
 .faq-item > button span {
   color: #5e5965;
   font-family: Consolas, monospace;
-  font-size: 9px;
+  font-size: 16px;
 }
 
 .faq-item > button svg {
@@ -1533,12 +1549,12 @@ strong {
 .faq-item p {
   padding: 0 44px 24px;
   color: #8e8994;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .final-cta {
-  padding: 80px;
-  margin-bottom: 120px;
+  padding: 56px;
+  margin-bottom: 88px;
   border: 1px solid rgba(135, 101, 255, 0.25);
   border-radius: 28px;
   overflow: hidden;
@@ -1563,7 +1579,7 @@ strong {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1fr) 430px;
   gap: 50px;
   align-items: end;
 }
@@ -1571,12 +1587,35 @@ strong {
 .final-cta h2 {
   max-width: 760px;
   margin-top: 18px;
-  font-size: clamp(43px, 6.3vw, 78px);
+  font-size: clamp(36px, 4.5vw, 58px);
 }
 
 .final-cta p {
   margin-top: 18px;
   color: #9994a1;
+}
+
+.final-cta h2,
+.inner-hero-copy h1 {
+  letter-spacing: 0.01em;
+  line-height: 1.04;
+}
+
+.cta-button {
+  width: 100%;
+  min-width: 430px;
+  min-height: 61px;
+}
+
+.founding-card {
+  width: 100%;
+  align-self: center;
+}
+
+.founding-card > strong {
+  min-width: 9ch;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
 }
 
 .cta-proof {
@@ -1586,7 +1625,7 @@ strong {
   margin-top: 50px;
   border-top: 1px solid var(--line);
   color: #77727e;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .cta-proof strong {
@@ -1595,7 +1634,7 @@ strong {
 
 .footer {
   width: var(--page);
-  padding: 70px 0 28px;
+  padding: 56px 0 28px;
   margin: 0 auto;
   border-top: 1px solid var(--line);
 }
@@ -1603,21 +1642,21 @@ strong {
 .footer-grid {
   display: grid;
   grid-template-columns: 1.5fr repeat(3, 1fr);
-  gap: 55px;
+  gap: 40px;
 }
 
 .footer-brand p {
   max-width: 270px;
   margin-top: 18px;
   color: #77727e;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .proof-line {
   display: inline-block;
   margin-top: 25px;
   color: #55515c;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .footer-grid > div:not(.footer-brand) {
@@ -1629,12 +1668,12 @@ strong {
 .footer-grid > div > strong {
   margin-bottom: 8px;
   color: #d5d1dc;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .footer-grid a:not(.brand) {
   color: #706c77;
-  font-size: 11px;
+  font-size: 16px;
   transition: color 160ms ease;
 }
 
@@ -1649,7 +1688,7 @@ strong {
   margin-top: 65px;
   border-top: 1px solid var(--line);
   color: #514d57;
-  font-size: 9px;
+  font-size: 16px;
 }
 
 .cookie-banner {
@@ -1677,13 +1716,13 @@ strong {
 }
 
 .cookie-banner strong {
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .cookie-banner p {
   margin-top: 4px;
   color: #827e8a;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .cookie-actions {
@@ -1714,7 +1753,7 @@ strong {
   color: #ded9e4;
   background: #15131a;
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
-  font-size: 10px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -1742,7 +1781,7 @@ strong {
   display: flex;
   gap: 10px;
   align-items: center;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .icon-button {
@@ -1766,7 +1805,7 @@ strong {
   border-radius: 4px 12px 12px 12px;
   color: #d4cfd9;
   background: rgba(255, 255, 255, 0.045);
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .chat-message.answer {
@@ -1789,7 +1828,7 @@ strong {
   border-radius: 7px;
   color: #85808c;
   background: transparent;
-  font-size: 8px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -1818,7 +1857,7 @@ strong {
   color: #d9d5df;
   background: rgba(18, 17, 22, 0.97);
   box-shadow: 0 16px 45px rgba(0, 0, 0, 0.4);
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .toast svg {
@@ -1839,7 +1878,7 @@ strong {
 
 .modal {
   width: min(480px, 100%);
-  padding: 27px;
+  padding: 24px;
   border: 1px solid var(--line-bright);
   border-radius: 20px;
   background:
@@ -1862,12 +1901,12 @@ strong {
 .modal > p {
   margin-top: 18px;
   color: #96919e;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .modal > p.muted {
   color: #5f5b66;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .modal-action {
@@ -1878,10 +1917,10 @@ strong {
 .modal-amount {
   margin-top: 25px;
   color: var(--lime);
-  font-family: "Arial Narrow", sans-serif;
+  font-family: "Manrope Variable", "Segoe UI", sans-serif;
   font-size: 44px;
   font-weight: 760;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.01em;
 }
 
 .inner-page {
@@ -1890,21 +1929,21 @@ strong {
 
 .inner-hero {
   display: grid;
-  grid-template-columns: 1.18fr 0.82fr;
-  gap: 80px;
-  align-items: end;
+  grid-template-columns: minmax(0, 1.25fr) minmax(400px, 0.75fr);
+  gap: 64px;
+  align-items: center;
   width: var(--page);
-  min-height: 700px;
-  padding: 130px 0 90px;
+  min-height: 620px;
+  padding: 100px 0 64px;
   margin: 0 auto;
 }
 
 .inner-hero-copy h1 {
   max-width: 900px;
   margin-top: 24px;
-  font-size: clamp(58px, 8vw, 104px);
+  font-size: clamp(44px, 5.3vw, 74px);
   font-weight: 650;
-  letter-spacing: -0.075em;
+  letter-spacing: 0.01em;
 }
 
 .inner-hero-copy p {
@@ -1917,7 +1956,7 @@ strong {
 .founding-card,
 .fund-card {
   position: relative;
-  padding: 28px;
+  padding: 24px;
   border: 1px solid var(--line-bright);
   border-radius: 20px;
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.015));
@@ -1927,7 +1966,7 @@ strong {
 .fund-card > span {
   color: #706b77;
   font-family: Consolas, monospace;
-  font-size: 9px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -1940,13 +1979,13 @@ strong {
   background-clip: text;
   font-family: Consolas, monospace;
   font-size: clamp(34px, 4vw, 52px);
-  letter-spacing: -0.06em;
+  letter-spacing: 0.01em;
 }
 
 .founding-card > p {
   margin-top: 8px;
   color: #5f5a65;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .founding-card > div {
@@ -1958,7 +1997,7 @@ strong {
   border-top: 1px solid var(--line);
   color: var(--lime);
   font-family: Consolas, monospace;
-  font-size: 8px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -1980,12 +2019,12 @@ strong {
 .story-index {
   color: var(--lime);
   font-family: Consolas, monospace;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .story-section h2 {
   margin-top: 20px;
-  font-size: clamp(38px, 4.8vw, 62px);
+  font-size: clamp(34px, 4vw, 52px);
 }
 
 .story-copy {
@@ -2006,17 +2045,17 @@ strong {
 .mission blockquote {
   max-width: 1000px;
   margin: 40px auto 0;
-  font-family: "Arial Narrow", "Segoe UI", sans-serif;
+  font-family: "Manrope Variable", "Segoe UI", sans-serif;
   font-size: clamp(48px, 7vw, 88px);
   font-weight: 650;
-  letter-spacing: -0.06em;
+  letter-spacing: 0.01em;
   line-height: 1.05;
 }
 
 .mission p {
   margin-top: 40px;
   color: #6f6a76;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .values-grid {
@@ -2045,7 +2084,7 @@ strong {
 .value-card > div span {
   color: #56515c;
   font-family: Consolas, monospace;
-  font-size: 9px;
+  font-size: 16px;
 }
 
 .value-card h3 {
@@ -2056,7 +2095,7 @@ strong {
 .value-card p {
   margin-top: 14px;
   color: #827d89;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .team-section {
@@ -2071,7 +2110,7 @@ strong {
 
 .team-card {
   min-height: 305px;
-  padding: 27px;
+  padding: 24px;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.01));
@@ -2113,7 +2152,7 @@ strong {
 .team-card p {
   margin-top: 12px;
   color: #85808d;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .team-card small {
@@ -2123,7 +2162,7 @@ strong {
   border-top: 1px solid var(--line);
   color: #55515c;
   font-family: Consolas, monospace;
-  font-size: 8px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -2131,8 +2170,8 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 90px;
-  margin-bottom: 120px;
+  padding: 64px;
+  margin-bottom: 88px;
   border: 1px solid rgba(139, 100, 255, 0.23);
   border-radius: 28px;
   background: radial-gradient(circle at 50% 0%, rgba(117, 76, 224, 0.21), transparent 25rem), #0e0d11;
@@ -2149,16 +2188,16 @@ strong {
   background: linear-gradient(90deg, #fff, #9277ee, var(--lime));
   background-clip: text;
   font-size: clamp(64px, 10vw, 130px);
-  letter-spacing: -0.08em;
+  letter-spacing: 0.01em;
   line-height: 0.9;
 }
 
 .donate-hero {
-  min-height: 620px;
+  min-height: 560px;
 }
 
 .fund-card > strong {
-  font-family: "Arial Narrow", "Segoe UI", sans-serif;
+  font-family: "Manrope Variable", "Segoe UI", sans-serif;
 }
 
 .fund-bar {
@@ -2181,7 +2220,7 @@ strong {
   display: block;
   margin-top: 9px;
   color: #625d68;
-  font-size: 9px;
+  font-size: 16px;
 }
 
 .donate-section {
@@ -2198,7 +2237,7 @@ strong {
   display: flex;
   flex-direction: column;
   min-height: 320px;
-  padding: 27px;
+  padding: 24px;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.012));
@@ -2206,15 +2245,15 @@ strong {
 
 .donate-card > strong {
   margin-top: 42px;
-  font-family: "Arial Narrow", "Segoe UI", sans-serif;
+  font-family: "Manrope Variable", "Segoe UI", sans-serif;
   font-size: 36px;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.01em;
 }
 
 .donate-card > p {
   margin-top: 10px;
   color: #827d89;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .donate-card > .button {
@@ -2261,7 +2300,7 @@ strong {
 .donate-proof strong {
   margin-top: 10px;
   font-size: clamp(70px, 13vw, 165px);
-  letter-spacing: -0.09em;
+  letter-spacing: 0.01em;
   line-height: 0.95;
 }
 
@@ -2387,11 +2426,11 @@ strong {
   .mobile-nav > a:not(.button) {
     padding: 12px;
     color: #b1acb8;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .section {
-    padding: 84px 0;
+    padding: 64px 0;
   }
 
   .section-head {
@@ -2399,16 +2438,16 @@ strong {
   }
 
   .section-head h2 {
-    font-size: clamp(36px, 12vw, 53px);
+    font-size: clamp(32px, 10vw, 44px);
   }
 
   .section-head p {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .hero {
     min-height: auto;
-    padding: 112px 0 70px;
+    padding: 96px 0 56px;
   }
 
   .hero-grid {
@@ -2416,7 +2455,7 @@ strong {
   }
 
   .hero h1 {
-    font-size: clamp(50px, 15vw, 68px);
+    font-size: clamp(42px, 12vw, 56px);
   }
 
   .hero-actions {
@@ -2551,8 +2590,8 @@ strong {
 
   .final-cta {
     width: var(--page);
-    padding: 40px 24px;
-    margin-bottom: 80px;
+    padding: 32px 22px;
+    margin-bottom: 64px;
   }
 
   .cta-grid {
@@ -2562,6 +2601,7 @@ strong {
 
   .cta-button {
     width: 100%;
+    min-width: 0;
   }
 
   .footer-grid {
@@ -2609,15 +2649,15 @@ strong {
 
   .inner-hero {
     min-height: auto;
-    padding: 100px 0 70px;
+    padding: 80px 0 56px;
   }
 
   .inner-hero-copy h1 {
-    font-size: clamp(52px, 16vw, 74px);
+    font-size: clamp(42px, 13vw, 60px);
   }
 
   .inner-hero-copy p {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .story-section {
@@ -2642,8 +2682,8 @@ strong {
 
   .about-final {
     width: var(--page);
-    padding: 60px 20px;
-    margin-bottom: 80px;
+    padding: 48px 18px;
+    margin-bottom: 64px;
   }
 
   .about-final .button {

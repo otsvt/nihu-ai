@@ -3,5 +3,3 @@ dist
 .vite
 *.local
 dev-server*.log
-.sites-stage
-*.tar.gz
