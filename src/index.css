@@ -1809,26 +1809,29 @@ strong {
 }
 
 .chat-message.answer {
-  margin-left: auto;
-  border-radius: 12px 4px 12px 12px;
+  margin-right: auto;
   border-color: rgba(184, 243, 75, 0.16);
   background: rgba(184, 243, 75, 0.05);
 }
 
 .quick-replies {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 6px;
+  align-items: flex-end;
   margin-top: 13px;
 }
 
 .quick-replies button {
-  padding: 7px 8px;
+  width: fit-content;
+  max-width: 88%;
+  padding: 7px 10px;
   border: 1px solid var(--line);
-  border-radius: 7px;
+  border-radius: 12px 4px 12px 12px;
   color: #85808c;
   background: transparent;
   font-size: 16px;
+  text-align: right;
   cursor: pointer;
 }
 
